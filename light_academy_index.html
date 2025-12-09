@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="pt">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Light Academy — Inscrição de Estudantes</title>
+  <meta name="description" content="Registe-te na Light Academy — cursos práticos de inglês e preparação para bolsas. Vagas limitadas.">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background: radial-gradient(circle at 50% 50%, #e7aa51, #ffe499, #8d5a1b, #e7aa51, #ac7031);
+      background-attachment: fixed;
+      color: #222;
+    }
+
+    header, section, footer {
+      width: 90%;
+      max-width: 900px;
+      margin: auto;
+      padding: 20px;
+      background: rgba(255,255,255,0.85);
+      border-radius: 12px;
+      margin-top: 25px;
+    }
+
+    h1, h2 {
+      text-align: center;
+    }
+
+    a.button {
+      display: block;
+      width: fit-content;
+      margin: 15px auto;
+      padding: 12px 20px;
+      background: #8d5a1b;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    input, select, textarea, button {
+      padding: 10px;
+      border-radius: 6px;
+      border: 1px solid #999;
+    }
+
+    button {
+      background: #8d5a1b;
+      color: white;
+      border: none;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Aprende inglês que te abre portas</h1>
+    <p>Cursos práticos, dinâmicos e feitos pra quem quer resultados rápidos. Inscreve-te já — vagas limitadas.</p>
+    <a href="#inscricao" class="button">Inscrever-me</a>
+  </header>
+
+  <section id="sobre">
+    <h2>Sobre a Light Academy</h2>
+    <p>A Light Academy oferece aulas de Inglês e preparação para exames com metodologia prática e professores experientes. Ideal para quem quer falar com confiança, passar em bolsas ou melhorar as notas.</p>
+  </section>
+
+  <section id="inscricao">
+    <h2>Inscrição de Estudante</h2>
+    <form action="https://formsubmit.co/teuemail@exemplo.com" method="POST">
+      <label>Nome completo<input type="text" name="nome" required></label>
+      <label>Data de nascimento<input type="date" name="nascimento" required></label>
+      <label>E-mail<input type="email" name="email" required></label>
+      <label>Telefone (WhatsApp)<input type="text" name="telefone" required></label>
+      <label>Cidade/Província<input type="text" name="cidade" required></label>
+      <label>Nível de inglês
+        <select name="nivel" required>
+          <option>Iniciante</option>
+          <option>Intermédio</option>
+          <option>Avançado</option>
+        </select>
+      </label>
+      <label>Curso pretendido<input type="text" name="curso" required></label>
+      <label>Observações<textarea name="observacoes"></textarea></label>
+
+      <input type="hidden" name="_subject" value="Nova inscrição Light Academy">
+      <input type="hidden" name="_next" value="https://lightacademy.github.io/obrigado.html">
+      <button type="submit">Enviar inscrição</button>
+    </form>
+    <p>Os teus dados serão usados apenas para fins de matrícula e contacto.</p>
+  </section>
+
+  <footer>
+    <p style="text-align:center;">Light Academy • contato@lightacademy.ao • +244 XXXXXXXXX<br>© 2025 Light Academy — Todos os direitos reservados.</p>
+  </footer>
+
+</body>
+</html>
